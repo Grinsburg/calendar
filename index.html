@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar</title>
+</head>
+<body>
+    <section>
+        <div class="container header">
+            <div class="row between">
+                <div class="click-block">
+                    <button id="add_button" class="btn">Добавить</button>
+                    <button id="update_button" class="btn">Обновить</button>
+                </div>
+                <div class="search-block">
+                    <button>U+1F50D</button>
+                    <input type="text" placeholder="Событие, дата или участник">
+                </div>
+                <div id="add_block" class="add-block popup-duble-corner" >
+                    <div class="add-block-event" id="add-block-event">
+                        <form>
+                            <input type="text" id="name" name="name" required  placeholder="Дата, время, событие" pattern="1, dgfdgdg, fgdgdg" title="Пример: 6, 15.00, гулять">
+                            <button id="create_event" >Создать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-bottom: 50px;">
+            <div class="row padding">
+                <div class="data-items">
+                    <button><</button>
+                </div>
+                <div class="data-items">
+                    <span>Март 2013</span>
+                </div>
+                <div class="data-items">
+                    <button>></button>
+                </div>
+                <div class="data-items">
+                    <button>Сегодня</button>
+                </div>
+            </div>
+            <div class="row" id="row_data">
+                <div id="info-block" style="display: none;">
+                   <div class="info-block-data">
+                        <input type="text" class="new_event" name="new_event" id="new_event" placeholder="Событие">
+                        <input type="text" class="date_new_event" name="date_new_event" id="date_new_event" placeholder="День, месяц, год">
+                        <input type="text" class="people_new_event" name="people_new_event" id="people_new_event" placeholder="Участники">
+                        <textarea name="txt_write" class="txt_write" id="txt_write" cols="22" rows="10" placeholder="Описание"></textarea>
+                        <button class="btn add_new_info" id="add_new_info">Готово</button>
+                        <button class="btn del_old_info" id="del_old_info">Удалить</button>
+                   </div>
+                </div>
+                <div class="item bl">Понедельник, 25</div>
+                <div class="item">Вторник, 26</div>
+                <div class="item">Среда, 27</div>
+                <div class="item">Четверг, 28</div>
+                <div class="item">Пятница, 1</div>
+                <div class="item">Суббота, 2</div>
+                <div class="item">Воскресенье, 3</div>
+                <div class="item bl">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+                <div class="item">9</div>
+                <div class="item">10</div>
+                <div class="item bl">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item bl">18</div>
+                <div class="item">19</div>
+                <div class="item">20</div>
+                <div class="item">21</div>
+                <div class="item">22</div>
+                <div class="item">23</div>
+                <div class="item">24</div>
+                <div class="item bl bb">25</div>
+                <div class="item bb">26</div>
+                <div class="item bb">27</div>
+                <div class="item bb">28</div>
+                <div class="item bb">29</div>
+                <div class="item bb">30</div>
+                <div class="item bb">31</div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
